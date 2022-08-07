@@ -1,0 +1,41 @@
+//task1
+fonction dot_product (v1:entier,v2:entier,size:entier):entier;{
+    var 
+      ps=0;
+    debut
+       pour (i=0,i<size,i++)
+         ps=pour+v1[i]*v2[i];
+         retourner ps;
+        fin pour
+    fin;          
+}
+algorithme dotproduct;
+var 
+  sum:entier
+debut
+   pour (i=0,i<size,i++)
+    lire v1[i];
+    lire v2[i];
+   fin pour
+   sum=dot_product(v1,v2,size=3)
+   si(sum=0)alors
+     ecrire("ortho")
+    sinon 
+      ecrire("non ortho") 
+    fin si 
+fin;    
+//task2
+procedure insertionsort(a,n){
+    debut
+      pour (i=1,i<n-1,i++){*
+        valeur=a[i];
+        indice=i;
+        tantque (indice>0 && a[indice-1>valeur])
+            a[indice]=a[indice-1];
+            indice=indice-1;
+        fin tantque
+        a[indice]=valeur;
+        fin pour
+      }
+    fin
+}  
